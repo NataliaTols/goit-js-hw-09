@@ -14,3 +14,79 @@
 @import url('./header.css');
 @import url('./badges.css');
 @import url('./back-link.css');
+
+.gallery {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  grid-auto-rows: 200px;
+  gap: 24px;
+  padding: 0;
+  justify-content: center;
+}
+
+.gallery li {
+  overflow: hidden;
+  width: 360px;
+  height: 200px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.feedback-form {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: 420px;
+  align-items: flex-start;
+}
+
+.email-input {
+  margin-top: 8px;
+  min-width: 360px;
+  height: 40px;
+}
+.feedback-form input,
+.feedback-form textarea {
+  width: 92%;
+  box-sizing: border-box;
+}
+.button {
+  display: block;
+    padding: 10px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 92%;
+    max-width: 95px;
+    align-self: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.button-wrapper {
+  width: 100%;
+  max-width: 420px;
+}

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
   </head>
   <body>
     
@@ -16,7 +19,21 @@
         <h1 class="main-title">
           Form
         </h1>
-        
+        <form class="feedback-form" autocomplete="off">
+          <label>
+            Email
+            <input type="email" class="email-input" name="email" autofocus />
+          </label>
+          <label>
+            Message
+            <textarea name="message" class="message-input" rows="8"></textarea>
+          </label>
+          <div class="button-wrapper">
+            <button type="submit" class="button">Submit</button>
+          </div>
+          
+        </form>
+
       </div>
     </main>
 
